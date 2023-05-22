@@ -33,3 +33,8 @@ print (c2.real)#3
 print (c2.imag) #-2
 
 
+#Operadores ternarios
+
+edad = 19
+
+print ("usted puede votar " if edad >=18 else "usted no puede votar")
