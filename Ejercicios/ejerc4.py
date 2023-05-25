@@ -19,7 +19,7 @@ if ((lado1>0) and (lado2>0) and (lado3>0) ):
         
 
     elif (lado2==lado3!=lado1):
-        print ("es un triangulo isoceles")
+        print ("es un triangulo isoceles")   
     elif (lado3==lado1!=lado2):
         print ("es un triagulo isoceles")
 

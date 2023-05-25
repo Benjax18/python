@@ -86,4 +86,59 @@ for nume,animal in zip(numeros,animales):
 
 for n in range (2,10): # range funciona con ponerle un numero (desde donde empieza ) y hasta antes del segundo numero
     print (n)     # el primer numero lo cuenta y el segundo no
+                  # y si no le ponemos dos numeros y solo uno pues arranca desde el
 
+# Forma incorrecta de recorrer una lista por su indice
+for nume in range (len(numeros)):
+    print (numeros [nume])
+# La forma correcta es 
+for nume in enumerate(numeros):
+    indice=nume [0]
+    valor=nume [1]
+    print (f"el indice es: {indice} y el valor es: {valor}")
+
+# Como iterar un diccionario
+
+dic={
+    "nombre": "Benjamin",
+    "apellido": "Miranda",
+    "años": 18,
+    "deporte":"Futbol"
+}
+#recorriendo el diccionariopara obtener la clave
+for key in dic:
+    print (key)
+
+#recorriendo el diccionario con items para obtener la clave y el valor 
+for datos in dic.items():
+    key=datos[0]
+    valor=datos[1]
+    print (f"la clave es {key} y el valor es {valor}")
+
+
+deportes =["futbol","tenis","basquetbol","ping pong","voley","quemados"]
+
+for i in deportes:
+    if i =="voley":
+        continue # hace que recorra todo pero se salte (voley) o el valor que queramos 
+    print (f"yo juego {i}")
+
+for i in deportes:
+    if i =="tenis":
+        break # hace que recorra todo pero al llegar a (tenis) o al valor que queramos termina todo el bucle 
+    print (f"yo juego {i}")
+print ("me dolio el cuerpo de tanto")
+
+#Recorrer una cadena de texto
+cadena="hola mijo"
+
+for letra in cadena: # recorre caracter por caracter incluyendo el espacio
+    print(letra)
+
+#for en una linea de codigo
+
+nm=[2,10,5,3,4]
+#Multiplicamos por dos cada numero de la lista y lo mejor "EN UNA SOLA LINEA"
+numero=[x*2 for x in nm] # LA EXPRESION MATEMATICA VIENE ADELANTE Y LUEGO LO DEMAS
+
+print (numero)

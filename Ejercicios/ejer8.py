@@ -3,4 +3,3 @@ mes= input ("ingrese el mes: ")
 #y arroje la estacion
 #correspondiente a ese mes: verano, oto˜no, invierno o primavera 
 
-if mes ==""
