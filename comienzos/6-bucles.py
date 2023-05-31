@@ -142,3 +142,5 @@ nm=[2,10,5,3,4]
 numero=[x*2 for x in nm] # LA EXPRESION MATEMATICA VIENE ADELANTE Y LUEGO LO DEMAS
 
 print (numero)
+
+# Con el codigo .ITEMS en diccionario puede ver la key y el valor.

@@ -1,9 +1,21 @@
 
-#redes_sociales = []
-#for i in range(3):
-#    perfil = input("Ingrese el nombre del perfil de red social: ")  TODOS ESTO HACE UNA LISTA DENTRO DE UN DICCIONARIO CON EL BUCLE FOR
-#    redes_sociales.append(perfil)
+def algt_nombre(nume):
+    i=0
+    lis=[]
+    while i < nume:
 
-#ag_tf["Redes Sociales"] = redes_sociales
+        personas =input ("ingrese el nombre de la persona")
+
+        
+        lis.append(personas)
+        
+        i=i+1
+    print (lis)
+    for i in lis:
+        print (f"buenos dias crack {i}")
+
+n=int (input ("ingrese el numero de personas que ahi: "))
 
 
+
+algt_nombre(n)
